@@ -1,0 +1,11 @@
+Usar base de datos 'universidadcompleta2.2'
+-------------------------------
+Admin = admin@hotmail.com 
+pass = 1234567890
+-------------------------------
+Alumno = alumno@hotmail.com 
+pass = 1234567890
+-------------------------------
+Profe = profe@hotmail.com 
+pass = 1234567890
+-------------------------------

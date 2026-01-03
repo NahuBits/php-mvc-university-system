@@ -1,0 +1,198 @@
+/* Dashboard Alumno /*
+
+/* Variables de color */
+:root {
+  --color-primario: #0069ff;
+  --color-secundario: #20c997;
+  --color-fondo: #f4f7fa;
+  --color-texto: #212529;
+  --color-blanco: #fff;
+  --sombra-suave: rgba(0, 0, 0, 0.1);
+  --border-radius: 12px;
+  --transition: 0.3s ease;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Reset base */
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Título */
+h3 {
+  font-weight: 700;
+  color: var(--color-primario);
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 3px rgba(0, 105, 255, 0.3);
+}
+
+/* Cards */
+.card {
+  background: var(--color-blanco);
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 20px var(--sombra-suave);
+  transition: transform var(--transition), box-shadow var(--transition);
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 30px rgba(0, 105, 255, 0.25);
+}
+
+.card-header {
+  background: var(--color-primario);
+  color: var(--color-blanco);
+  padding: 1rem 1.5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  box-shadow: inset 0 -3px 8px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.card-body {
+  padding: 1.5rem 1.5rem;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+/* Item dentro de cards */
+.mb-3 {
+  margin-bottom: 1.25rem !important;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  transition: background-color var(--transition);
+  border-radius: 8px;
+}
+
+.mb-3:last-child {
+  border-bottom: none;
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
+}
+
+.mb-3:hover {
+  background-color: var(--color-fondo);
+}
+
+.fw-bold {
+  color: var(--color-primario);
+  font-weight: 700 !important;
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Texto descriptivo */
+.mb-2 {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem !important;
+}
+
+/* Botones */
+.btn-success {
+  background: var(--color-secundario);
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  width: 100%;
+  transition: background-color var(--transition);
+  box-shadow: 0 4px 8px rgba(32, 201, 151, 0.4);
+  cursor: pointer;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+  background: #17c88f;
+  box-shadow: 0 6px 15px rgba(23, 200, 143, 0.7);
+  outline: none;
+}
+
+/* Alert info */
+.alert-info {
+  border-radius: var(--border-radius);
+  font-style: italic;
+  font-weight: 500;
+  background: #e9f7f5;
+  color: #319795;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: inset 0 0 10px #b2f5ea;
+}
+
+/* Listas de tareas y novedades */
+.card ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.card ul li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.8rem;
+  position: relative;
+}
+
+.card ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-secundario);
+  font-size: 1.4rem;
+  top: 0;
+  line-height: 1;
+}
+
+/* Botón descargar reporte */
+.btn-primary {
+  background: var(--color-primario);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-weight: 700;
+  color: var(--color-blanco);
+  border-radius: var(--border-radius);
+  box-shadow: 0 6px 15px rgba(0, 105, 255, 0.5);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: background-color var(--transition);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #0046c1;
+  box-shadow: 0 8px 25px rgba(0, 70, 193, 0.7);
+  outline: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .row > [class*='col-'] {
+    margin-bottom: 1.5rem;
+  }
+}

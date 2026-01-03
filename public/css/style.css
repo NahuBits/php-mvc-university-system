@@ -1,0 +1,382 @@
+body{
+
+    background-color:  #171717 !important;
+
+}
+
+
+/*Nav*/
+#navegadorPaginaPrincipal{
+ background-color: #171717;
+}
+#navegadorPaginaPrincipal .nav-link{
+    font-size: 1.3rem;
+    font-weight: 500; /* Semi bold */
+    letter-spacing: 0.5px; /* Espacio entre letras */
+    padding: 0.8rem 1.2rem;
+    color: #ffffff;
+}
+
+/* color de fondo de los navlink*/
+.nav-link:hover{
+    background-color: #98a5b3;
+}
+
+
+.carousel-item {
+    will-change: transform;  /* Le dice al navegador que se va a mover */
+  }
+
+#footerinfo{
+    background-color:  #171717;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+}
+#footerinfo p, h5, b{
+    color: #ffffff !important;
+
+}
+
+.card {
+    cursor: default; /* para que el cursor no se vea como un botón */
+  }
+/* Primera sección: Info de la universidad */
+.seccion-universidad {
+    background: rgba(14, 0, 0, 0.397); /* Azul oscuro transparente */
+    padding: 60px 20px;
+    border-radius: 15px;
+    box-shadow: 0 30px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.seccion-universidad h2 {
+    font-size: 2.5rem;
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.seccion-universidad p {
+    color:  #ffffff !important;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.seccion-universidad .btn-primary {
+    background-color:  rgb( 113,128, 255 ) ;
+    border: none;
+    font-size: 1.1rem;
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.seccion-universidad .btn-primary:hover {
+    background-color: rgb(5, 20, 155)
+}
+
+/* Segunda sección: Programas académicos */
+.seccion-contenedor {
+    background: rgba(14, 0, 0, 0.397); /* Fondo gris clarito */
+    padding: 60px 20px;
+    border-radius: 15px;
+    box-shadow: 0 20px 20px rgba(255, 255, 255, 0.973);
+    margin-bottom: 50px;
+}
+
+.seccion-contenedor h2 {
+    font-size: 2.5rem;
+    color:  #ffffff !important;
+    font-weight: bold;
+}
+
+
+.seccion-contenedor p {
+    color:  #000000 !important;
+    font-size: 1.1rem ;
+    margin-bottom: 40px;
+}
+/* seccion de programamas academicos */
+.seccion-contenedor h4 {
+    font-size: 1.5rem;
+    color:  #000000 !important;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.seccion-contenedor .row > div {
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+}
+
+.seccion-contenedor .row > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+/* carrusel */
+#carouselExampleDark {
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 15px; /* Opcional: bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  }
+  
+  /* Imágenes dentro del carrusel */
+  #carouselExampleDark .carousel-item img {
+    height: 500px;
+    object-fit: cover; /* Ajusta la imagen manteniendo buen encuadre */
+  }
+  
+  /* Texto del caption */
+  #carouselExampleDark .carousel-caption {
+    font-size: 1.3rem;
+    background: rgba(0, 0, 0, 0.4); /* Fondo negro semi-transparente detrás del texto */
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+
+  /* estilo pagina login y olvide mi contraseña /*
+
+    /* General Box Styling */
+    .olvide-box {
+      width: 100%;
+      max-width: 400px;
+      margin: 80px auto;
+      padding: 40px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+  }
+  .olvide-box:hover {
+      transform: translateY(-5px);
+  }
+
+  /* Heading Style */
+  .olvide-box h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+     /* font-family: 'Arial', sans-serif;*/
+  }
+
+  /* Input Styling */
+  .olvide-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 15px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: all 0.3s;
+  }
+  .olvide-box input:focus {
+      border-color: #007bff;
+      outline: none;
+      box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+  }
+
+  /* Button Styling */
+  .olvide-box button {
+      width: 100%;
+      padding: 12px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  .olvide-box button:hover {
+      background-color: #0056b3;
+  }
+
+  /* Error and Success Messages */
+  .olvide-box .error {
+      color: red;
+      font-size: 14px;
+      margin-bottom: 15px;
+      background: #f8d7da;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: left;
+      font-weight: bold;
+  }
+  .olvide-box .success {
+      color: green;
+      font-size: 14px;
+      margin-bottom: 15px;
+      background: #d4edda;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: left;
+      font-weight: bold;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 480px) {
+      .olvide-box {
+          padding: 20px;
+      }
+      .olvide-box h2 {
+          font-size: 20px;
+      }
+  }
+
+    /* Estilos Imagenes y texto */
+
+.custom-img{ 
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    margin-top: 50px;
+  }
+
+  .image-wrapper:hover .custom-img{
+    transform: scale(1.05);
+  }
+
+  .position-relative{
+    position: relative;
+    overflow: hidden;
+  }
+
+  .overlay-text{
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  /*Testimonios - Programas - novedades / imagenes oculta*/
+  .testimonio-card {
+    transition: transform 0.3s ease;
+  }
+  
+  .testimonio-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .testimonio-img {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 1;
+  }
+  
+  .testimonio-card:hover .testimonio-img {
+    opacity: 1;
+  }
+  
+  .testimonio-content {
+    position: relative;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+  }
+  
+  .testimonio-card:hover .testimonio-content {
+    opacity: 0;
+  }
+
+  
+  /* Estilo para la página de Preguntas Frecuentes */
+
+.preguntas-frecuentes .card {
+    max-width: 850px;
+    background-color: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.preguntas-frecuentes .accordion-button {
+    color: #333;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+}
+
+.preguntas-frecuentes .accordion-button:not(.collapsed) {
+    color: #0056b3;
+    background-color: #e9ecef;
+}
+
+.preguntas-frecuentes .accordion-item {
+    margin-bottom: 15px;
+}
+
+.preguntas-frecuentes h2 {
+    font-weight: 700;
+    color: #333;
+}
+
+.preguntas-frecuentes p {
+    color: #555;
+}
+
+.preguntas-frecuentes a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.preguntas-frecuentes a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el título de la página */
+.preguntas-frecuentes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.preguntas-frecuentes p.text-muted {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.btn-scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ffffffe3; /* negro*/
+    color: #000000;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    display: none; /* Oculto por defecto */
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+    transition: transform 0.2s ease-in-out; /* Añade animación suave */
+}
+
+.btn-scroll-top:hover {
+    background-color: #c5c5c5;
+    transform: scale(1.05); /* Aumenta el tamaño un 5% */
+}
+
+
+
+
+  
+
+ 
+

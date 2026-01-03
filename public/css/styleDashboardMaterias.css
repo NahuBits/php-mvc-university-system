@@ -1,0 +1,14 @@
+.bg-grado {
+    background-color: #0d6efd; /* Bootstrap Primary Blue */
+    color: white;
+}
+
+.bg-posgrado {
+    background-color: #ffc107; /* Bootstrap Warning (Yellow) */
+    color: #212529; /* texto oscuro para mejor contraste */
+}
+
+.bg-curso {
+    background-color: #0dcaf0; /* Bootstrap Info (Light Blue) */
+    color: #212529; /* texto oscuro */
+}

@@ -1,0 +1,111 @@
+/* Fondo para el contenedor de los cursos */
+#courseContainer {
+  background-image: url('<?php echo RUTA_URL; ?>/public/img/IMGDeFondo.jpg'); /* Ruta de la imagen */
+  background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+  background-position: center center; /* Centra la imagen */
+  background-attachment: fixed; /* La imagen se queda fija mientras haces scroll */
+  padding: 50px 0; /* Espaciado interno para separar el contenido de los bordes */
+  min-height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+  position: relative;
+  z-index: 2; /* Asegura que el contenido esté por encima del fondo */
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+/* Fondo semitransparente para las tarjetas de cursos */
+.card-body {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia para mejorar la legibilidad */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.card-title {
+  color: black !important; /* Asegura que el título sea negro */
+}
+
+/* Estilo para el botón "Ver Más" */
+.card-body .btn-dark {
+  display: block;            /* Hace que el botón ocupe toda la línea */
+  width: 100%;               /* Hace que el botón ocupe todo el ancho disponible */
+  margin: 20px 0;            /* Espaciado arriba y abajo */
+  padding: 12px;             /* Relleno interno para hacerlo más grande */
+  border-radius: 50px;       /* Bordes redondeados */
+  text-align: center;        /* Asegura que el texto esté centrado */
+  font-size: 16px;           /* Tamaño de fuente adecuado */
+  color: #fff;               /* Texto en blanco */
+  background-color: #000;    /* Fondo negro */
+  border: none;              /* Sin borde */
+  transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Cambio de color al pasar el ratón */
+.card-body .btn-dark:hover {
+  background-color: #333;    /* Fondo negro más oscuro al pasar el ratón */
+}
+
+/* Sidebar */
+.sidebar {
+  display: none;
+  height: 100%;
+  position: fixed;
+  z-index: 3; /* Asegura que el sidebar esté por encima del fondo */
+  top: 0;
+  right: 0;
+  background-color: #111111;
+  overflow-y: auto;
+  padding: 60px 20px 20px 20px;
+  color: white;
+  max-width: 80%;
+  transform: translateX(100%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  overscroll-behavior: contain;
+}
+
+.sidebar.show {
+  display: block;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.sidebar a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 36px;
+}
+
+/* Imagen dentro del sidebar */
+.course-image {
+  max-width: 100%;
+  max-height: 500px; 
+  height: auto;
+  margin-top: 20px;
+  object-fit: contain; 
+  margin-left: 20px;
+}
+
+/* Descripción del curso */
+#courseDescription {
+  padding: 0 20px;
+  max-height: 400px; /* Definimos la altura máxima */
+  overflow-y: auto; /* Habilitamos el scroll vertical */
+  padding-right: 10px; /* Espacio adicional para la barra de scroll */
+  margin-top: 20px; /* Espacio entre la imagen y la descripción */
+  font-size: 16px; /* Tamaño de la fuente */
+  text-align: justify;
+}
+
