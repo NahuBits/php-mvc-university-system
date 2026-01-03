@@ -1,4 +1,4 @@
-Usar base de datos 'universidadcompleta2.2'
+Usar base de datos 'universidadcompleta2'
 -------------------------------
 Admin = admin@hotmail.com 
 pass = 1234567890
